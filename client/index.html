@@ -4,6 +4,7 @@
     <title>Hello</title>
     <!-- ANGULAR 1.5.8 -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     <!-- CSS -->
@@ -11,17 +12,22 @@
     </style>
   </head>
   <body>
+    <!-- BABEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
     <!-- ANGULAR APP -->
     <div ng-app='app'>
+      <!-- <div ng-view></div> -->
       <my-input index="1" title="Current Age" value="value"></my-input>
       <my-input index="2" title="Current Retirement Savings" value="value"></my-input>
       <my-input index="3" title="Desired Annual Retirement Income" value="value"></my-input>
     </div>
 
     <!-- JS -->
-    <script src='my_input.js'></script>
-    <script src='app.js'></script>
+    <script src="bundle.js"></script>
+    <!-- <script type="text/babel" src='my_input.js'></script>
+    <script type="text/babel" src='InputsCtrl.js'></script>
+    <script type="text/babel" src='app.js'></script> -->
 
     <!-- Angular Material requires Angular.js Libraries -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
